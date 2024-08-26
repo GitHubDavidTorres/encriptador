@@ -1,0 +1,237 @@
+.text-input::-webkit-input-placeholder {
+  color: darkblue;
+}
+.text-input::-moz-placeholder {
+  color: darkblue;
+}
+.text-input:-ms-input-placeholder {
+  color: darkblue;
+}
+.text-input::-ms-input-placeholder {
+  color: darkblue;
+}
+.text-input::placeholder {
+  color: darkblue;
+}
+.text-input:focus {
+  outline: none;
+}
+
+* {
+  background: #bedcf5;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+}
+
+main {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  justify-content: center;
+}
+
+.text-input {
+  resize: none;
+  margin-top: 90px;
+  color: darkblue;
+  border: none;
+}
+
+.text-output {
+  resize: none;
+  margin-left: 98px;
+  padding: 20px;
+  padding-bottom: 120px;
+  height: 612px;
+  color: darkblue;
+  background: white;
+  background-image: url(Capture.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 1em;
+  box-shadow: 8px 8px;
+}
+.text-output:focus {
+  outline: none;
+}
+.restriccion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  color: #7b66ff;
+}
+
+.botones {
+  display: flex;
+  margin-top: 18px;
+}
+.encriptar {
+  color: whitesmoke;
+  background: #3a1078;
+  border: 1px solid #3a1078;
+  border-radius: 25px;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+}
+.desencriptar {
+  color: #3a1078;
+  background: whitesmoke;
+  border: 1px solid #3a1078;
+  border-radius: 25px;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 30px;
+  width: 328px;
+}
+.dinamico {
+  background: transparent;
+  margin-left: 120px;
+  margin-top: -240px;
+  width: 360px;
+  position: absolute;
+  text-align: center;
+}
+.texto1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: initial;
+  background: transparent;
+}
+.texto2 {
+  font-size: 16px;
+  line-height: initial;
+  background: transparent;
+}
+.copiar {
+  color: darkblue;
+  background: #d8dfe8;
+  border: 1px solid darkblue;
+  border-radius: 25px;
+  cursor: pointer;
+  height: 67px;
+  width: 336px;
+  margin-top: 120px;
+}
+.encriptar:hover,
+.desencriptar:hover,
+.copiar:hover {
+  background: #ef5a6f;
+  color: white;
+}
+.anuncio {
+  display: none;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 80px;
+  left: 100px;
+  margin-left: -75px;
+  opacity: 0.6;
+}
+
+/* Laptop */
+@media screen and (max-width: 1366px) {
+  main {
+    margin-left: 0px;
+  }
+  .text-input {
+    margin-top: 50px;
+    width: 686px;
+    height: 400px;
+  }
+  .botones,
+  .text-output {
+    margin-top: 0px;
+  }
+  .text-output {
+    height: 550px;
+  }
+  .dinamico {
+    margin-top: -160px;
+  }
+  .copiar {
+    margin-top: 60px;
+  }
+}
+/* Tablet */
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+    margin: 0px 30px;
+  }
+  .text-input {
+    margin-top: 60px;
+    width: 100%;
+    height: 700px;
+  }
+  .botones {
+    margin-top: 0px;
+  }
+  .text-output {
+    margin: 40px 0px;
+    width: 655px;
+    height: 300px;
+    background: white;
+  }
+  .dinamico {
+    margin-top: -250px;
+    margin-left: 0px;
+    width: 655px;
+  }
+  .texto1 {
+    margin-bottom: 0.5em;
+  }
+  .copiar {
+    margin-top: 100px;
+  }
+  .anuncio {
+    margin-left: 70px;
+  }
+}
+/* Celular */
+@media screen and (max-width: 375px) {
+  .text-input {
+    margin-top: 20px;
+    height: 340px;
+  }
+  .botones {
+    display: block;
+    margin-top: 0px;
+  }
+  .encriptar,
+  .desencriptar {
+    width: 100%;
+  }
+  .desencriptar {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .text-output,
+  .dinamico,
+  .copiar {
+    width: 295px;
+  }
+  .dinamico {
+    margin-left: 10px;
+  }
+  .text-output {
+    padding: 10px;
+    padding-bottom: 120px;
+    height: 180px;
+  }
+  .anuncio {
+    width: 285px;
+    margin-left: -100px;
+  }
+}
