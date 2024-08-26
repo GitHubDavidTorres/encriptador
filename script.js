@@ -107,7 +107,7 @@ function ocultar() {
 }
 
 function mostrar() {
-  output.style.background = '#FFF no-repeat center url(imagenes/Capture.PNG)';
+  output.style.background = '#FFF no-repeat center url(Capture.PNG)';
   seccionTexto1.style.display = '';
   seccionTexto2.style.display = '';
   btnCopiar.style.display = 'none';
